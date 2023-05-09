@@ -56,7 +56,10 @@ tl2
 
 dishs.forEach( (ele,i) => ele.setAttribute("style",`--degree:${i * (360 / dishs.length)}deg`))
 
-restAnimation()
+setTimeout(()=>{
+    restAnimation()
+},3000)
+
 let dish1 =  {
     rotate : 40,
     headText : "#1 Most loved dish",
